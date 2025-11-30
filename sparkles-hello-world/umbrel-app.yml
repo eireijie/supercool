@@ -1,30 +1,25 @@
 manifestVersion: 1
-id: sparkles-hello-world
-name: Hello World
-tagline: Replace this tagline with your app's tagline
-icon: https://svgur.com/i/mvA.svg
-category: Development
+id: octoprint-remote
+category: Tools
+name: OctoPrint (Remote)
 version: "1.0.0"
-port: 4000
+tagline: Remote OctoPrint Web UI (via Tailscale)
 description: >-
-  Add your app's description here.
-
-
-  You can also add newlines!
-
-developer: Umbrel
-website: https://umbrel.com
-submitter: Umbrel
-submission: https://github.com/getumbrel/umbrel-hello-world-app
-repo: https://github.com/getumbrel/umbrel-hello-world-app
-support: https://github.com/getumbrel/umbrel-hello-world-app/issues
-gallery:
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
-  - https://i.imgur.com/yyVG0Jb.jpeg
+  This Umbrel app simply opens your OctoPrint dashboard running on another device via Tailscale.
 releaseNotes: >-
-  Add what's new in the latest version of your app here.
-dependencies: []
+  Initial release.
+developer: Yug Patel
+website: https://octoprint.org
+repo: https://github.com/YOURUSERNAME/octoprint-remote
+support: https://github.com/YOURUSERNAME/octoprint-remote/issues
+port: 0
 path: ""
+gallery: []
 defaultUsername: ""
 defaultPassword: ""
+icon: https://cdn.jsdelivr.net/gh/selfhst/icons/png/octoprint.png
+
+# THIS is the important part.
+portal:
+  url: "http://100.95.237.99/"   # <-- PUT YOUR TAILSCALE IP HERE
+  openInSidebar: false
